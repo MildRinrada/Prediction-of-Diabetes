@@ -1,0 +1,15 @@
+{% include 'indexs/header.html' %}
+        <div>
+            <!--โซนสำหรับรับค่าจาก User-->
+            <form  class="bginput1" name="myForm" action="/create" method="post" onsubmit="return validateForm()">
+
+                {% include 'components/input.html' %}
+
+                <!--ปุ่มทำนาย สั่งให้รับค่า-->
+                <button type="submit" class="rounded-button1 buttonstyle ">Enter</button>
+            </form>
+        </div>    
+
+
+{% include 'indexs/footer.html' %}
+{% include 'components/script.html' %}
