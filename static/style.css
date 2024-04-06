@@ -1,0 +1,232 @@
+body {
+    background-color: white; 
+}
+
+.header {
+    background-color: #1B969E;
+    padding: 10px;
+    width: 100%;
+    height: 140px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+
+.font_header {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    position: fixed;
+    right: 500px;
+    top: 20px;
+    font-weight: bold;
+    color: /*#0E5256;*/ White;
+    text-shadow: 0px 3px 0px rgba(255, 255, 255, 0.5);
+} 
+
+.font_header2 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    position: fixed;
+    right: 640px;
+    top: 90px;
+    font-weight: bold;
+    color: /*#0E5256;*/ White;
+    text-shadow: 0px 3px 0px rgba(255, 255, 255, 0.5);
+} 
+
+.longline {
+    position: fixed; 
+    top: 80px; 
+    left: 20px;
+}
+
+.line1 {
+    position: fixed; 
+    top: 105px;
+    left: -60px;
+    transform: scale(0.8);
+}
+
+.line2 {
+    position: fixed; 
+    top: 125px; 
+    left: -30px;
+    transform: scale(0.8);
+}
+
+.line3 {
+    position: fixed; 
+    bottom: 70px; 
+    right: -30px;
+    transform: scale(0.8);
+}
+
+.line4 {
+    position: fixed; 
+    bottom: 45px; 
+    right: -60px;
+    transform: scale(0.8);
+}
+
+.plus1 {
+    position: fixed; 
+    transform: scale(0.4);
+    top: -20px; 
+    left: -20px;
+}
+
+.plus2 {
+    position: fixed; 
+    transform: scale(0.45);
+    top: 53px; 
+    right: -20px;
+}
+
+.plus3 {
+    position: fixed; 
+    transform: scale(0.4);
+    bottom: 53px; 
+    left: -40px;
+}
+
+.bottom {
+    background-color: #1B969E;
+    padding: 10px;
+    width: 100%;
+    height: 90px;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+}    
+
+.bginput1 {
+    padding: 30px;
+    width: 22%; 
+    height: 60%;
+    position: absolute;
+    left: 570px;
+}
+
+.bginput2 {
+    padding: 30px;
+    width: 22%; 
+    height: 60%;
+    position: absolute;
+    left: 250px;
+}
+
+.label {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rounded-button1 {
+    position: fixed; 
+    right: 720px; 
+}
+
+.rounded-button2 {
+    position: fixed; 
+    right: 1050px;
+}
+  
+.buttonstyle {
+    background-color: #3FC2CB;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttonstyle:hover {
+    background-color: White;
+}
+
+.rounded-button::-moz-focus-inner { 
+    border: 0; 
+}
+  
+.rounded-button:focus {
+    outline: none;
+}     
+
+label {
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+}
+
+input[type="text"] {
+    border: 2px solid #7B7B7B;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 330px;
+    height: 33px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.percent {
+    position: absolute;
+    top: 200px;
+    right: 290px;
+    font-size: 70px;
+    color: #1B969E;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    transition: background-color 2s ease-in-out 5s;
+}
+
+.textOutput {
+    position: absolute;
+    top: 380px;
+    right: 300px;
+    font-size: 20px;
+    color: Black;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.textOutput p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.textOutputbox {
+    background-color: White;
+    padding: 30px;
+    width: 24%; 
+    height: 1%;
+    position: absolute;
+    top: 380px;
+    right: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 260px;
+    right: 660px;
+    transform: scale(0.4); 
+}
+
+.emoji {
+    position: absolute;
+    bottom: -130px;
+    right: -380px;
+    transform: scale(0.3);
+}
+
