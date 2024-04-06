@@ -6,7 +6,6 @@ pip install scikit-learn <br>
 pip install Flask <br>
 
 1. สร้าง Database ก่อน โดยใช้คำสั่ง CREATE DATABASE diabetesdb; <br>
-<br>
 2. สร้างตาราง<br>
 CREATE TABLE diabetestable ( <br>
   id int auto_increment primary key, <br>
@@ -17,7 +16,6 @@ CREATE TABLE diabetestable ( <br>
   age int,<br>
   result varchar(30)<br>
 );<br>
-<br>
 3. เปิดโปรแกรม แล้วพิมพ์ใน terminal<br>
 pip install pandas<br>
 pip install scikit-learn<br>
