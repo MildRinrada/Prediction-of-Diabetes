@@ -21,5 +21,4 @@ pip install pandas<br>
 pip install scikit-learn<br>
 pip install mysql-connector-python<br>
 pip install Flask<br>
-<br>
 4. แก้รหัสผ่านฐานข้อมูลตัวเองใน model.py และรันที่ views.py 
