@@ -1,0 +1,29 @@
+<!--แสดง Output-->
+{% if percentage != '' %}
+
+    <!--ขึ้นกล่อง Output-->
+    <div class="textOutputbox"></div>
+            
+        <!--เงื่อนไข โดยใช้ percentage ขึ้นข้อความ และอีโมจิ-->
+        <div class="textOutput">
+            {% if percentage >= 75.0 %}
+                <p>มีโอกาสเป็นเบาหวานสูงนะ</p>
+                <div class="emoji"><img src="{{ url_for('static', filename='emoji 4.png') }}" alt="รูปภาพ"></div>  
+            {% elif percentage >= 50.0 %}
+                <p>          มีโอกาสเป็นเบาหวานปานกลาง</p>
+                <div class="emoji"><img src="{{ url_for('static', filename='emoji 3.png') }}" alt="รูปภาพ"></div>  
+            {% elif percentage >= 25.0 %}
+                <p>มีโอกาสเป็นเบาหวานนิดหน่อย</p>
+                <div class="emoji"><img src="{{ url_for('static', filename='emoji 2.png') }}" alt="รูปภาพ"></div>  
+            {% else %}
+                <p>มีโอกาสเป็นเบาหวานต่ำมาก</p>
+                <div class="emoji"><img src="{{ url_for('static', filename='emoji 1.png') }}" alt="รูปภาพ"></div>  
+            {% endif %}
+        </div>
+
+{% endif %}
+
+    <!--แสดงผลทำนาย-->
+    {% if result %}
+        <p class="percent">{{ result }}</p>
+    {% endif %}

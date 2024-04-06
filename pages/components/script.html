@@ -1,0 +1,58 @@
+    <!--ส่วนของ Javascript-->
+    <script>
+        // ใช้เช็คและป้องกันerror
+        function validateForm() {
+            // ตรวจสอบค่าที่ต้องกรอกครบหรือไม่
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                // กรณีค้นพบว่ากรอกไม่ครบ หลังกด Enter
+                if (inputs[i].hasAttribute('required') && inputs[i].value.trim() === '') {
+                    alert('กรุณาป้อนค่าให้ครบ');
+                    return false;
+                }
+                // กรณีค้นพบว่ากรอกไม่ครบ และuserไม่ระบุตัวเลขบางตัว
+                else if ((inputs[i].hasAttribute('required') && inputs[i].value.trim() === '') 
+                && (isNaN(pregnancies) || isNaN(glucose) || isNaN(bloodpressure) || isNaN(BMI) || isNaN(age))) {
+                    alert('กรุณาป้อนค่าให้ครบ และระบุค่าเป็นตัวเลขทั้งหมด');
+                    return false;
+                }
+            }
+
+            // ตรวจสอบค่าว่าเป็นตัวเลขหรือไม่ (กรณีที่ป้อนครบแล้ว)
+            // trim() เพื่อ เผื่อ user Inputแล้วมีตัวข้างหน้าว่าง เช่น '  10'
+            var pregnancies = document.getElementById('pregnancies').value.trim();
+            var glucose = document.getElementById('glucose').value.trim();
+            var bloodpressure = document.getElementById('bloodpressure').value.trim();
+            var BMI = document.getElementById('BMI').value.trim();
+            var age = document.getElementById('age').value.trim();
+
+
+            if ((pregnancies < 0 || glucose < 0 || bloodpressure < 0 || BMI < 0 || age < 0) && (isNaN(pregnancies) || isNaN(glucose) || isNaN(bloodpressure) || isNaN(BMI) || isNaN(age))) {
+                alert("กรุณากรอกเฉพาะตัวเลขที่ไม่ติดลบ และไม่เป็นตัวอักษร หรือสัญลักษณ์ทั่วไป");
+                return false;
+            }
+
+            // ตรวจสอบค่าว่าเป็นตัวเลขติดลบหรือไม่
+            else if ((pregnancies < 0 || glucose < 0 || bloodpressure < 0 || BMI < 0 || age < 0) && !(isNaN(pregnancies) || isNaN(glucose) || isNaN(bloodpressure) || isNaN(BMI) || isNaN(age))) {
+                alert("กรุณากรอกเฉพาะตัวเลขที่ไม่ติดลบ");
+                return false;
+            }            
+
+            // ตรวจสอบค่าว่าเป็นตัวเลขหรือไม่ (กรณีที่ป้อนครบแล้ว)
+            else if (isNaN(pregnancies) || isNaN(glucose) || isNaN(bloodpressure) || isNaN(BMI) || isNaN(age) && (pregnancies > 0 || glucose > 0 || bloodpressure > 0 || BMI > 0 || age > 0)) {
+                alert('กรุณาระบุตัวเลขทั้งหมด ไม่เป็นตัวอักษร หรือสัญลักษณ์ทั่วไป');
+                return false;
+            }         
+            
+            if(!Number.isInteger(parseFloat(pregnancies)) && !Number.isInteger(parseFloat(age))) {
+                if(!(pregnancies.isInteger())) alert("กรุณากรอกจำนวนการคลอดไม่เป็นทศนิยม");
+                else if (!(age.isInteger())) alert("กรุณากรอกอายุไม่เป็นทศนิยม");
+                else alert("กรุณากรอกจำนวนการคลอด และอายุไม่เป็นทศนิยม");
+                return false;
+            }
+            
+
+            return true;
+        }
+    </script>    
+</html>
